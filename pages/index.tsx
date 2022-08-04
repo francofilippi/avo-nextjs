@@ -12,7 +12,7 @@ export const getStaticProps: GetStaticProps = async () => { // STATIC-SITE GENER
 
   // Esto es lo mismo que el fetch comentado abajo, con la diferencia que este es static-site rendering.
   // en el codigo fuente se ve igual que para el server-side pero este se ejecuta 1 UNICA VEZ, que es cuando hago el build.
-  const response = await fetch('https://next-vercel-avoc.vercel.app/api/avo')
+  const response = await fetch('https://platzi-avo.vercel.app/api/avo')
   const { data: productList }: TAPIAvoResponse = await response.json()
 
   return {
