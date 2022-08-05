@@ -22,14 +22,14 @@ const ShoppingCartIcon = ({ cartCount, name }: ShoppingCartIconProps) => {
   }
 
   return (
-    <div className="container">
+    <div className="containerBasket">
       <Basket />
-      <div className="text">
+      <div className="text cartText">
         {` ${name} `}
         {showCartCount()}
       </div>
       <style>{`
-        .container {
+        .containerBasket {
           display: flex;
           align-items: center;
         }
@@ -38,6 +38,9 @@ const ShoppingCartIcon = ({ cartCount, name }: ShoppingCartIconProps) => {
         }
         .text span {
           font-size: smaller;
+        }
+        .cartText {
+          color: white;
         }
       `}</style>
     </div>

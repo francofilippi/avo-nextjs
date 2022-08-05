@@ -10,7 +10,7 @@ type YesOrNoApiResponse = {
 }
 
 const fetchResult = async () => {
-  const res = await fetch('https://platzi-avo.vercel.app/api/yes-or-no')
+  const res = await fetch('https://avo-nextjs-eta.vercel.app/api/yes-or-no')
   const { data }: YesOrNoApiResponse = await res.json()
 
   return data
@@ -50,7 +50,7 @@ const YesOrNo = ({ initialResult }: { initialResult: string }) => {
           {result}
         </Header>
 
-        <p>
+        <p className='pTryAgain'>
           <Button
             color="green"
             onClick={onClick}
@@ -67,13 +67,16 @@ const YesOrNo = ({ initialResult }: { initialResult: string }) => {
         </p>
       </div>
 
-      <style jsx>{`
+      <style>{`
         div {
           text-align: center;
         }
         div :global(h1.header) {
           font-size: 7rem;
           text-transform: uppercase;
+        }
+        .pTryAgain{
+          margin-bottom: 1.5rem;
         }
       `}</style>
     </Layout>

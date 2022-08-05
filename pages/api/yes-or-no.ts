@@ -10,7 +10,7 @@ const allAvos = async (req: NextApiRequest, res: NextApiResponse) => {
 
   res.status(200).json({
     data: answer,
-    error: null,
+    error: null
   })
 }
 
