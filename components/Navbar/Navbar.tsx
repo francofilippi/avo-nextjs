@@ -107,7 +107,9 @@ const Navbar = () => {
                 </button> */}
 
                 <Link href="/cart" passHref>
-                  <ShoppingCartIcon cartCount={cartCount} name="Canasta" />
+                  <a>
+                    <ShoppingCartIcon cartCount={cartCount} name="Canasta" />
+                  </a>
                 </Link>
 
                 {/* Profile dropdown */}
