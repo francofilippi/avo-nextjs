@@ -17,8 +17,8 @@ function classNames(...classes: string[]) {
 }
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' }
+  { name: 'Avocados', href: '/' },
+  { name: 'Facts', href: '/about' }
 ]
 
 const Navbar = () => {

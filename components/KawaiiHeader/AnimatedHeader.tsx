@@ -15,7 +15,7 @@ const AnimatedHeader = ({
   onComplete,
 }: AnimatedHeaderProps) => (
   <Header size="huge" as="h1" onClick={onClick}>
-    Platzi
+    Avo
     <Transition
       animation="jiggle"
       visible={visible}
@@ -24,7 +24,7 @@ const AnimatedHeader = ({
     >
       <Avocado size="58px" />
     </Transition>
-    Avo
+    Fan
   </Header>
 )
 
